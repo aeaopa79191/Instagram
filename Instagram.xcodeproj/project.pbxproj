@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		640086AB9FC6F9584ABECB6C /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AA4451D3C994109FA80454 /* Pods_Instagram.framework */; };
 		BE673BC41C51D2B100C2DF6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE673BC31C51D2B100C2DF6A /* AppDelegate.swift */; };
-		BE673BC61C51D2B100C2DF6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE673BC51C51D2B100C2DF6A /* ViewController.swift */; };
 		BE673BC91C51D2B100C2DF6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE673BC71C51D2B100C2DF6A /* Main.storyboard */; };
 		BE673BCB1C51D2B100C2DF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE673BCA1C51D2B100C2DF6A /* Assets.xcassets */; };
 		BE673BCE1C51D2B100C2DF6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE673BCC1C51D2B100C2DF6A /* LaunchScreen.storyboard */; };
+		BEE0D42A1C51EF0D0007088C /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0D4291C51EF0D0007088C /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,11 @@
 		94AA4451D3C994109FA80454 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE673BC01C51D2B100C2DF6A /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE673BC31C51D2B100C2DF6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE673BC51C51D2B100C2DF6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE673BC81C51D2B100C2DF6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE673BCA1C51D2B100C2DF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE673BCD1C51D2B100C2DF6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE673BCF1C51D2B100C2DF6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE0D4291C51EF0D0007088C /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				BE673BC31C51D2B100C2DF6A /* AppDelegate.swift */,
-				BE673BC51C51D2B100C2DF6A /* ViewController.swift */,
 				BE673BC71C51D2B100C2DF6A /* Main.storyboard */,
 				BE673BCA1C51D2B100C2DF6A /* Assets.xcassets */,
 				BE673BCC1C51D2B100C2DF6A /* LaunchScreen.storyboard */,
 				BE673BCF1C51D2B100C2DF6A /* Info.plist */,
+				BEE0D4291C51EF0D0007088C /* PhotosViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -210,8 +210,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE673BC61C51D2B100C2DF6A /* ViewController.swift in Sources */,
 				BE673BC41C51D2B100C2DF6A /* AppDelegate.swift in Sources */,
+				BEE0D42A1C51EF0D0007088C /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
