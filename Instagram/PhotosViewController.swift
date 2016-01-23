@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AFNetworking
+
+
 
 class PhotosViewController: UIViewController {
     
