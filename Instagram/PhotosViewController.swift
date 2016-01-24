@@ -22,7 +22,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
         
         tableView.dataSource = self
-        //tableView.delegate = self
+        tableView.delegate = self
      
 
         // Do any additional setup after loading the view.
@@ -68,19 +68,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
             let cell = tableView.dequeueReusableCellWithIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoCell
             let element = media![indexPath.row]
-           // let title = movie["title"] as! String
-           // let overview = movie["overview"] as! String
-            //let baseUrl = "https://scontent.cdninstagram.com/hphotos-xpa1/"
-//let posterPath = movie["poster_path"] as! String
-            let url = element.valueForKey("image.low_resolution.url") as! String
-            let imageUrl = NSURL(string: url)
+
+            let path = element.valueForKey("images.low_resolution.url") as! String
+            let imageUrl = NSURL(string: path)
             
             cell.photo.setImageWithURL(imageUrl!)
-            //cell.titleLable.text = title
-            //cell.overviewLable.text = overview
-            
-            
-            
+
             print("row \(indexPath.row)")
             return cell
         
