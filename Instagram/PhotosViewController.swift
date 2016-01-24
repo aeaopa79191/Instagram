@@ -69,7 +69,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             let cell = tableView.dequeueReusableCellWithIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoCell
             let element = media![indexPath.row]
 
-            let path = element.valueForKey("images.low_resolution.url") as! String
+            let path = element.valueForKeyPath("images.low_resolution.url") as! String
             let imageUrl = NSURL(string: path)
             
             cell.photo.setImageWithURL(imageUrl!)
