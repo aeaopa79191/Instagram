@@ -61,6 +61,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         }else{
             return 0
     }
+    }
     
         
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
@@ -97,5 +98,4 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
     */
 
-    }
 }
