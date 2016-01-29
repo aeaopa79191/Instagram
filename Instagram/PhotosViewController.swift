@@ -20,6 +20,9 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -45,6 +48,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                             
                             self.media = responseDictionary["data"] as? [NSDictionary]
                             self.tableView.reloadData()
+                             self.tableView.insertSubview(refreshControl, atIndex: 0)
                     }
                 }
         });
@@ -80,7 +84,10 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    
+    func refreshControlAction(refreshControl: UIRefreshControl){
+        self.tableView.reloadData()
+        refreshControl.endRefreshing()
+    }
 
     
     // MARK: - Navigation
