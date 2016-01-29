@@ -26,6 +26,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
      
 
         // Do any additional setup after loading the view.
+        
         let clientId = "e05c462ebd86446ea48a5af73769b602"
         let url = NSURL(string:"https://api.instagram.com/v1/media/popular?client_id=\(clientId)")
         let request = NSURLRequest(URL: url!)
@@ -81,14 +82,18 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+
+            var vc = segue.destinationViewController as! PhotoDetailsViewController
+            
+            var indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
     }
-    */
+    
 
 }
